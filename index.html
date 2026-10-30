@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Grok Cookie 助手隐私政策：Cookie 读取范围、本机处理、复制与导出、数据保存及联系方式。">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Grok Cookie 助手隐私政策</title><link rel="stylesheet" href="assets/site.css"><link rel="icon" href="assets/icon.png"></head>
+<body><a class="skip" href="#policy">跳转到政策正文</a><main id="policy">
+<header><div class="brand"><img src="assets/icon.png" width="40" height="40" alt=""><span>Grok Cookie 助手</span></div>
+<h1>隐私政策</h1><p class="intro">了解扩展读取什么数据、如何使用，以及你可以如何管理。</p>
+<dl class="meta"><div><dt>更新日期</dt><dd>2026 年 10 月 29 日</dd></div><div><dt>适用版本</dt><dd>1.0.0</dd></div><div><dt>发布者</dt><dd>beichen317</dd></div></dl>
+</header>
+<nav aria-label="政策目录"><a href="#data">读取范围</a><a href="#sharing">本机处理</a><a href="#retention">保存与删除</a><a href="#contact">联系发布者</a></nav>
+<section id="scope"><h2>适用范围</h2><p>本政策说明 Grok Cookie 助手 Chrome 扩展如何处理用户数据。扩展的单一用途是在用户本机查看、复制和导出其本人浏览器中适用于 https://grok.com/ 的 Cookie。</p><p>本扩展是独立辅助工具，与 xAI/Grok 无官方关系。它不验证账号订阅状态，不提供订阅开通或付款服务。</p></section><section id="data"><h2>读取哪些数据、何时读取</h2><p>当前 1.0.0 版本在用户打开扩展弹窗或点击“重新读取”时，通过浏览器 Cookie API 读取适用于 https://grok.com/ 的未分区 Cookie。读取范围为当前普通 Chrome 用户配置，不支持无痕窗口。</p><p>读取信息包括 Cookie 名称、值、域名、路径、有效期或会话标记，以及 Secure、HttpOnly、SameSite、hostOnly、storeId 等浏览器提供的属性。</p><p>这些 Cookie 可能包含 sso、sso-rw 等登录认证信息，以及 Grok 设置的偏好信息、持久标识或其他 Cookie 数据。扩展不解析 Cookie 值中的账号资料，也不会将完整导出内容限制为 sso 一项。</p></section><section id="use"><h2>数据用途</h2><p>读取的数据仅用于显示 Cookie 数量、检查非空 sso 及可选 sso-rw 是否存在、按用户选择显示 Cookie 内容，以及执行复制或 JSON 导出。</p><p>Cookie 内容默认隐藏。完整 Cookie 文本保留本次读取的全部 Cookie 名称和值；单独复制 sso 只复制该项值；JSON 复制和下载保留该批 Cookie 的原始属性。检测到 sso 仅表示本地存在该值，不代表登录有效性已经验证。</p></section><section id="sharing"><h2>本机处理与共享</h2><p>扩展本身不把 Cookie 发送给发布者、远程服务器或其他第三方，不包含广告、统计分析或遥测代码，也不会自动将 Cookie 提交到其他网站。</p><p>用户点击复制后，内容会进入系统剪贴板；选择下载后，内容会保存为本地 JSON 文件。用户随后将这些内容粘贴或上传到其他网站，是用户自行发起的后续操作，接收方的数据处理由其自身政策规定。</p></section><section id="retention"><h2>保存期限与删除</h2><p>读取的 Cookie 在扩展弹窗内存中临时处理。扩展不使用持久化存储保存 Cookie，弹窗关闭后不在扩展内保留该批数据。</p><p>复制后的内容可能保留在系统剪贴板、剪贴板历史或用户启用的系统同步服务中；下载的 JSON 文件保留在浏览器指定的下载位置。这些副本由用户自行清除或删除，关闭或卸载扩展不会自动删除它们。</p><p>源 Cookie 仍由浏览器和 Grok 管理。本扩展不修改或删除网站 Cookie。用户可通过浏览器网站数据设置、Grok 的退出登录或账号会话管理功能处理源 Cookie 或相关会话。</p></section><section id="permissions"><h2>权限与用途</h2>
+<dl class="permissions"><div><dt><code>cookies</code></dt><dd>读取目标 URL 适用的 Cookie，包括 HttpOnly 登录 Cookie，供本机查看、复制和导出。</dd></div>
+<div><dt><code>https://grok.com/*</code></dt><dd>将网站访问权限限制在 Grok。</dd></div>
+<div><dt><code>clipboardWrite</code></dt><dd>在用户点击复制按钮时，将所选数据写入系统剪贴板。</dd></div></dl>
+<p>扩展未申请访问所有网站、浏览历史、后台采集或 Cookie 持久化存储的权限。</p></section><section id="control"><h2>用户控制与凭证保护</h2><p>用户可以选择是否打开扩展、是否显示内容、是否执行复制或导出，也可以通过 Chrome 扩展管理页停用或卸载本扩展。</p><p>登录 Cookie 属于认证凭证，持有者可能取得对应账号的访问权限。请妥善保管导出内容，避免在公开页面、截图、评论或共享文件中披露真实凭证。</p></section><section id="limited-use"><h2>有限使用声明</h2><p>本扩展对用户数据的使用遵守 Chrome 网上应用店用户数据政策，包括有限使用要求。数据仅用于上述单一功能，不出售用户数据，不用于广告投放、与功能无关的画像、信用评估或放贷决策。发布者不会通过扩展接收或人工查看用户的 Cookie。</p></section>
+<section id="hosting"><h2>本政策网页与 GitHub 服务</h2>
+<p>本政策网页不包含 Cookie 读取功能、第三方统计脚本或表单，不会因访问本页面而取得你在 Grok 的登录 Cookie。</p>
+<p>本页面由 GitHub Pages 托管。访问页面时，GitHub 可能按其服务规则记录 IP 地址等访问信息；使用 GitHub Issues 联系发布者时，你提交的内容可能公开显示。相关处理见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">GitHub 隐私声明</a>。</p></section>
+<section id="contact"><h2>政策更新与联系</h2>
+<p>当扩展的数据处理方式发生变化时，发布者将同步更新本政策及商店披露；涉及新的数据用途时，将按适用要求进行告知并取得相应同意。</p>
+<p>本扩展由 GitHub 账号 <a href="https://github.com/beichen317" rel="noreferrer">beichen317</a> 维护。如有隐私问题，请通过 <a href="https://github.com/beichen317/grok-cookie-helper-privacy/issues" rel="noreferrer">本项目的 Issues 页面</a> 联系发布者。</p>
+<p>公开反馈时，请勿发送密码、真实登录 Cookie 或包含此类凭证的 JSON 文件。</p></section>
+<footer><a href="https://github.com/beichen317/grok-cookie-helper-privacy" rel="noreferrer">查看政策仓库</a><a href="#policy">返回顶部</a></footer>
+</main></body></html>
